@@ -17,7 +17,7 @@ Press this button and on the next screen it will give you the option to fork the
 
 ## Deploying to Render
 
-1. After you fork the repository navigate to [Render Dashboard](https://dashboard.render.com/) and click on the button titled "+ Add new", this will open a dropdown, in the dropdown select the option titled "Static Site".
+1. After you fork the repository navigate to [Render Dashboard](https://dashboard.render.com/) and click on the button titled "+ Add new", this will open a dropdown, in the dropdown select the option titled "Web Service".
 
 ![Add New Render Project Button](doc/images/AddNew.png)
 
@@ -25,21 +25,25 @@ Press this button and on the next screen it will give you the option to fork the
 
 ![GitHub Repository](doc/images/GitHubRepo.png)
 
-3. After you select the GitHub repository you want to deploy you will need to edit the "Publish Directory", in that text input write `dist`.
+3. After you select the GitHub repository you want to deploy you will need to edit the "Instance Type", in that section select the option that says `Free` so you can deploy a free instance and not worried about being billed.
 
-![Publish Directory](doc/images/PublishDirectory.png)
+![Free Instance](doc/images/FreeInstance.png)
 
-4. The last thing you need to configure to deploy this project is in the "Environment Variables" section, for the "NAME_OF_VARIABLE" enter `VITE_USER` and for the "Value" write your name, EX: "John Doe"
+4. The last thing you need to configure to deploy this project is in the "Environment Variables" section, for the "NAME_OF_VARIABLE" enter `USER` and for the "Value" write your name, EX: "John Doe"
 
 ![Environment Variables](doc/images/EnvironmentVariables.png)
 
 After you configure the "Publish Directory" and "Environment Variables" click on the button that says "Deploy Static Site". Give the deployment a few minutes to deploy, it should successfully deploy your project, the link of the deployed site will be highlighted purple. Below is an example of what you should be looking for
 
-![Deployed React Application](doc/images/DeployedLink.png)
+![Deployed Express Application](doc/images/DeployedLink.png)
 
 
 ## Expected Output
 
-Below is an image of what your expected output should look like if you deployed it correctly. The only difference you should see if you entered a name different than "John Doe"
+There are two routes to go to, for the main route, below is an image of what the expected output should look like
 
-![Expected Output](doc/images/ExpectedOutput.png)
+![Expected Output Main Endpoint](doc/images/ExpectedOutputMain.png)
+
+For the `/api/data` endpoint, below is an image of what the expected output should look like, the only difference you should see is if you enetered a name different than "John Doe"
+
+![Expected Output Api Data Endpoint](doc/images/ExpectedOutputApiData.png)
